@@ -320,3 +320,4 @@ client.run('%your token here%')
 
 #where it has "% %" please fill in your own information
 #download all dependencies if you didnt read the readme.txt
+#discord.py github: https://github.com/Rapptz/discord.py
