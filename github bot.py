@@ -1,3 +1,4 @@
+#dependencies
 import discord
 from discord.ext import commands
 import asyncio
@@ -82,7 +83,7 @@ async def hello(ctx):
 
 #shutdown
 @client.command(pass_context=True)
-@commands.has_any_role('shutdown', %role id here%)
+@commands.has_any_role('shutdown', %role id here%')
 async def shutdown(ctx):
     await ctx.send('Goodbye cruel world')
     print('Bot shut down')
@@ -189,7 +190,7 @@ async def corona(ctx):
 
 #commands
 @client.command(pass_context=True)
-async def commands(ctx):  #not an error :)
+async def commands(ctx):  #this might be highlighted as an error, but it isnt
     await ctx.send("**corona version,autoclear,clear,hello,shutdown,ping,cool,codedin,versionofpython,whattimeisit,thoughts,why,goodnight,bedtime,dad,whoshotxxxtentacion,whoshottupac,yeet,bieber,github,invite,agreeornot,didntask,corona,nice**")
 
 #nice
@@ -318,3 +319,4 @@ async def announcement(ctx, *, message=None):
 client.run('%your token here%')
 
 #where it has "% %" please fill in your own information
+#download all dependencies if you didnt read the readme.txt
